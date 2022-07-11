@@ -3,9 +3,7 @@ import servicesIcon from "../../assets/Services/CloudServices.svg";
 
 function Service(props){
     let serviceIcon = servicesIcon;
-    console.log(serviceIcon);
-    serviceIcon = "/src/" + props.icon;
-    console.log(serviceIcon);
+    serviceIcon = props.icon;
 
     return (
         <div className="service">
