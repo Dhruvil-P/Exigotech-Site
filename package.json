@@ -2,7 +2,6 @@
   "name": "exigotech",
   "private": true,
   "version": "0.0.0",
-  "homepage": "https://github.com/Dhruvil-P/Exigotech-Site/blob/main/src/main.jsx",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
