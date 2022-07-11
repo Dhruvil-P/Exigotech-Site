@@ -1,0 +1,774 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+:root{
+    --black: #1B2430;
+    --white: #F2F4F6;
+    --grey: #9AA4B1;
+    --blue: #47A8FA;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Lato', sans-serif;
+}
+
+body{
+    width: 100vw;
+    background: #FFFFFF;
+    overflow-x: hidden;
+}
+
+/*  */
+/* Common Components CSS */
+/*  */
+
+.moreBtn{
+    width: 60px;
+    height: 60px;
+    border-radius: 0px 30px 0px 0px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.titleMain{
+    font-size: 40px;
+    font-weight: medium;
+}
+
+.sectionHeading{
+    margin: 0px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+/*  */
+/* Nav CSS */
+/*  */
+
+.nav{
+    margin: 25px 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navLogo{
+    width: 200px;
+    height: 50px;
+}
+
+.navItems{
+    width: 40vw;
+    display: flex;
+    justify-content: space-between;
+    font-size: 18px;
+    font-weight: medium;
+}
+
+.items{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.items::after{
+    content: "";
+    width: 100%;
+    height: 2px;
+    display: block;
+    background: #FFFFFF;
+    margin-top: 5px;
+    transition: 0.5s;
+    border-radius: 1.5px;
+}
+
+.items:hover::after{
+    background: var(--black);
+    transform-origin: center;
+}
+
+.navBtn{
+    width: 135px;
+    height: 50px;
+    font-size: 18px;
+    font-weight: medium;
+    border: 2px solid var(--blue);
+    border-radius: 5px;
+    color: var(--blue);
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.navBtn:hover{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+/*  */
+/* Hero CSS */
+/*  */
+
+.hero{
+    margin: 75px 0px 0px 100px;
+    display: flex;
+}
+
+.heading{   
+    width: 80%;
+    margin-top: 50px;
+    color: var(--black);
+    font-size: 56px;
+    font-weight: bold;
+}
+
+.subText{
+    width: 550px;
+    margin-top: 20px;
+    color: var(--grey);
+    font-size: 21px;
+    font-weight: 500;
+    line-height: 32px;
+}
+
+.heroImg{
+    width: 735px;
+    height: 735px;
+}
+
+.heroBtn{
+    margin-top: 75px;
+    width: 450px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.startBtn, .learnBtn{
+    width: 200px;
+    height: 50px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: 0.3s;
+}
+
+.startBtn{
+    background-color: var(--blue);
+    color: var(--white);
+}
+
+.startBtn:hover{
+    box-shadow: 0px 2px 12px #47a9fa65;
+}
+
+.learnBtn{
+    color: var(--blue);
+    border: 2px solid #FFFFFF;
+}
+
+.learnBtn:hover{
+    border: 2px solid var(--blue);
+}
+
+/*  */
+/* Services CSS */
+/*  */
+
+.services{
+    margin: 200px 00px 100px 0px;
+}
+
+.serviceTitleMain{
+    color: var(--black);
+}
+
+.servicesMore, .aboutMore{
+    background: var(--black);
+    color: var(--white);
+}
+
+.moreBtn:hover{
+    transform: scale(1.1);
+}
+
+.arrowIcon{
+    width: 24px;
+    height: 24px;
+    transform: rotate(-135deg);
+}
+
+.serviceGrid{
+    margin-top: 50px;
+    width: calc(100vw -200px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.service{
+    width: 370px;
+    height: 370px;
+    margin: 25px;
+    border: 2px solid var(--white);
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.service:hover{
+    box-shadow: 0px 4px 32px #1b24302a;
+}
+
+.iconCont{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    background-color: var(--white);
+    display: grid;
+    place-content: center;
+}
+
+.serviceTitle{
+    margin-top: 25px;
+    font-size: 25px;
+    font-weight: 600;
+    color: var(--black);
+    text-align: center;
+    line-height: 24px;
+}
+
+.serviceDesc{
+    margin: 25px 25px 0px 25px;
+    font-size: 16px;
+    font-weight: medium;
+    color: var(--grey);
+    text-align: center;
+    line-height: 24px;
+}
+
+/*  */
+/* Case Studies CSS */
+/*  */
+
+.caseStudies{
+    margin: 100px 0px;
+    width: 100vw;
+    height: 120vh;
+    background-color: var(--black);
+}
+
+.csHeading{
+    padding-top: 100px;
+}
+
+.csTitleMain{
+    color: var(--white);
+}
+
+.csMore{
+    background: var(--white);
+    color: var(--black);
+}
+
+.csGrid{
+    margin: 50px 100px;
+    display: grid;
+    width: calc(100vw - 200px);
+    height: 650px;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+}
+.caseStudy{
+    width: 400px;
+    height: 300px;
+    background-color: #253141;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.caseStudy:nth-child(1){
+    height: 625px;
+    grid-area: 1/1/3/2;
+}
+
+.caseStudy:hover{
+    background-color: #334359;
+}
+
+.csImg{
+    width: calc(400px - 30px);
+    height: 200px;
+    border-radius: 10px;
+    margin: 0px 15px;
+    margin-top: 15px;
+}
+
+.caseStudy:nth-child(1) .csImg{
+    width: calc(400px - 30px);
+    height: calc(400px - 30px);
+    border-radius: 10px;
+    margin: 0px 15px;
+    margin-top: 15px;
+}
+
+.csTitle{
+    margin: 10px 15px 5px 15px;
+    font-size: 16px;
+    font-weight: medium;
+    color: var(--white);
+}
+
+.csDesc{
+    margin: 0px 15px;
+    font-size: 13px;
+    line-height: 20px;
+    color: var(--grey)
+}
+
+.caseStudy:nth-child(1) .csTitle{
+    margin: 15px 15px 10px 15px;
+    font-size: 20px;
+    font-weight: medium;
+    color: var(--white);
+}
+
+.caseStudy:nth-child(1) .csDesc{
+    margin: 0px 15px;
+    font-size: 16px;
+    line-height: 28px;
+    color: var(--grey)
+}
+
+/*  */
+/* About Us CSS */
+/*  */
+
+.aboutUs{
+    width: 100vw;
+    height: 100vh;
+}
+
+.aboutHeading{
+    margin: 100px 100px 0px 100px;
+}
+
+.aboutGrid{
+    margin-top: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.aboutDetail{
+    width: 600px;
+    height: 600px;
+    background-color: var(--white);
+    border-radius: 10px 0px 0px 10px;
+}
+
+.aboutDesc{
+    font-size: 18px;
+    line-height: 32px;
+    color: var(--black);
+    margin: 25px 25px 50px 25px;
+}
+
+.offerings{
+    margin: 0px 25px;
+    display: grid;
+    justify-content: space-between;
+    grid-template-columns: 250px 250px;
+}
+
+.offering{
+    width: 250px;
+    height: 50px;
+    margin: 0px 0px 25px 0px;
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.checkCont{
+    width: 48px;
+    height: 48px;
+    background-color: var(--grey);
+    color: var(--white);
+    border-radius: 50%;
+    display: grid;
+    place-content: center;
+}
+
+.offeringDesc{
+    font-size: 16px;
+    font-weight: bold;
+    color: var(--black);
+    text-align: left;
+    margin-left: 15px;
+}
+
+.aboutUsImg{
+    width: 700px;
+    height: 700px;
+    border-radius: 10px;
+    box-shadow: 0px 8px 64px #1b243064;
+    object-fit: cover;
+}
+
+/*  */
+/* Clients CSS */
+/*  */
+
+.clients{
+    margin: 100px 0px;
+    width: 100vw;
+    height: 100vh;
+    background-color: var(--black);
+}
+
+.clientsTitleMain{
+    margin-top: 100px;
+    color: var(--white);
+}
+
+.clientsMore{
+    visibility: hidden;
+}
+
+.clientsGrid{
+    width: calc(100vw - 200px);
+    margin: 75px 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.clientsCardCont{
+    width: calc(100vw - 200px);
+    display: flex;
+    justify-content: space-between;
+}
+
+.client{
+    width: 375px;
+    height: 350px;
+    background-color: var(--white);
+    border-radius: 5px;
+    padding: 25px;
+}
+
+.quoteIcon{
+    width: 40px;
+    height: 40px;
+    color: var(--grey);
+    opacity: 30%;
+}
+
+.clientDesc{
+    margin: 15px 0px 15px 0px;
+    font-size: 20px;
+    line-height: 32px;
+    font-weight: medium;
+    color: var(--grey);
+}
+
+.clientImg{
+    margin: 20px 0px 10px 0px;
+    border-radius: 50%;
+}
+
+.clientName{
+    font-size: 18px;
+    font-weight: bold;
+    color: var(--black);
+}
+
+.clientInfo, .ratingsCont{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.ratingsCont{
+    width: 50px;
+    font-weight: bold;
+}
+
+.starIcon{
+    color: #FBB454;
+}
+
+.carouselBtns{
+    margin-top: 50px;
+    width: 300px;
+    height: 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.previousBtn, .nextBtn{
+    width: 100px;
+    height: 50px;
+    background-color: #D8DCE1;
+    color: var(--black);
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.previousBtn:hover, .nextBtn:hover{
+    background-color: var(--white);
+}
+
+.clientArrow{
+    width: 24px;
+    height: 24px;
+}
+
+/*  */
+/* Contact Us CSS */
+/*  */
+
+.contactUs{
+    width: 100vw;
+    height: 100vh;
+}
+
+.contactCont{
+    margin-top: 50px;
+    display: flex;
+    justify-content: right;
+    align-items: center;
+}
+
+.contact{
+    margin-right: -60px;
+    padding: 50px;
+    width: 650px;
+    height: 650px;
+    background-color: var(--white);
+    border-radius: 10px;
+    z-index: 1000;
+    box-shadow: 0px 8px 64px #1b243064;
+}
+
+.contactHeading{
+    font-size: 32px;
+    color: var(--black);
+}
+
+.contactForm{
+    margin-top: 50px;
+    width: 80%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.contactInput{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: left;
+    height: 80px;
+}
+
+.contactInput:nth-child(3){
+    height: 180px;
+}
+
+label{
+    font-size: 20px;
+    font-weight: medium;
+    color: var(--black);
+}
+
+input, textarea{
+    height: 50px;
+    border: none;
+    outline: none;
+    padding: 15px;
+    border-radius: 5px;
+    font-size: 16px;
+    color: var(--black);
+}
+
+textarea{
+    height: 150px;
+    resize: none;
+}
+
+input::placeholder, textarea::placeholder{
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.contactBtn{
+    margin-top: 25px;
+    width: 40%;
+    height: 50px;
+    background-color: var(--blue);
+    color: var(--white) ;
+    font-size: 20px;
+    font-weight: medium;
+    border-radius: 5px;
+    display: grid;
+    place-content: center;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.contactBtn:hover{
+    box-shadow: 0px 2px 12px #47a9fa65;
+}
+
+.contactUsImg{
+    width: 800px;
+    height: 700px;
+    border-radius: 10px;
+    object-fit: cover;
+}
+
+
+/*  */
+/* Footer CSS */
+/*  */
+
+.footer{
+    margin: 100px 0px 0px 0px;
+    width: 100vw;
+    height: 50vh;
+    background-color: var(--black);
+    border: 1px solid #ffffff00;
+}
+
+.footerSections{
+    margin: 100px;
+    height: calc(50vh - 120px);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.upperSection{
+    width: calc(100vw - 200px);
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+}
+
+.sect1Text{
+    margin: 15px 0px 25px 0px;
+    font-size: 16px;
+    color: var(--white);
+}
+
+hr{
+    height: 1px;
+    background-color: var(--grey);
+}
+
+.phoneCont{
+    margin-top: 25px;
+    width: 130px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.sect2{
+    width: 600px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: var(--white);
+}
+
+.footerLinks, .linkSubtext{
+    width: 150px;
+    height: 150px;
+    display: flex;
+    flex-direction: column;
+    justify-content: left;
+    align-items: left;
+    font-size: 16px;
+    color: var(--grey);
+}
+
+.linkHeading{
+    font-size: 20px;
+    font-weight: bold;
+    color: var(--white);
+}
+
+.linkHeading, .linkSubtext p{
+    margin: 12px 0px;
+}
+
+.linkSubtext p{
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.linkSubtext p:hover{
+    color: var(--white);
+}
+
+.sect3{
+    width: 200px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.socialIcons{
+    width: 32px;
+    height: 32px;
+    color: var(--grey);
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.socialIcons:hover{
+    color: var(--white);
+}
+
+.copyrightText{
+    font-size: 16px;
+    color: var(--white);
+    opacity: 30%;
+}
+
+/*  */
+/* Responsive CSS */
+/*  */
+
+@media screen and (max-width: 414px){
+    body{
+        background-color: var(--black);
+    }
+
+    .navItems{
+        display: none;
+    }
+}
