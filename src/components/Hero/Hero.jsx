@@ -1,6 +1,8 @@
 import React from "react";
 import heroImg from "../../assets/Hero.jpg";
 
+console.log(heroImg);
+
 function Hero(){
     return (
         <div className="hero">
