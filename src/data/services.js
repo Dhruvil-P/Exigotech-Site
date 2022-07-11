@@ -1,7 +1,7 @@
 const services = [
     {
         key: 1,
-        icon: "https://exigotech.netlify.app//src/assets/Services/CloudServices.svg",
+        icon: "https://exigotech.netlify.app/src/assets/Services/CloudServices.svg",
         title: "Cloud Services",
         description: "Modernise your legacy infrastructure and distribute workloads smartly across the cloud platforms and benefit from digital business solutions.", 
     },
