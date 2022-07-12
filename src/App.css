@@ -879,7 +879,7 @@ hr{
     /*  */
 
     .caseStudies{
-        height: 450vh;
+        height: 220vh;
     }
 
     .csGrid{
@@ -920,7 +920,7 @@ hr{
     /*  */
 
     .aboutUs{
-        height: 250vh;
+        height: 120vh;
     }
 
     .aboutGrid{
@@ -956,7 +956,7 @@ hr{
     /*  */
 
     .clients{
-        height: 200vh;
+        height: 100vh;
     }
 
     .clientsGrid{
@@ -979,6 +979,10 @@ hr{
     /* Contact Us CSS */
     /*  */
 
+    .contactUs{
+        height: 50vh;
+    }
+
     .contactCont{
         flex-direction: column-reverse;
     }
@@ -1000,7 +1004,7 @@ hr{
 
     .footer{
         width: 100%;
-        height: 250vh;
+        height: 150vh;
         margin-top: 500px;
     }
 
@@ -1019,10 +1023,10 @@ hr{
 
     .sect2{
         width: calc(100% - 16px);
-        height: 100vh;
+        height: 80vh;
         flex-direction: column;
         justify-content: space-between;
-        margin: 50px 0px;
+        margin: 50px 0px 0px 0px;
     }
 
     .footerLinks{
@@ -1033,6 +1037,6 @@ hr{
     .sect3{
         width: calc(80% - 16px);
         height: 100px;
-        margin: 150px 0px 0px 50px;
+        margin: 50px 0px 0px 50px;
     }
 }
