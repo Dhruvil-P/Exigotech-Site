@@ -1,4 +1,5 @@
 import CS1 from "../assets/Case Studies/CS1.jpg"
+import CS1_M from "../assets/Case Studies/CS1 M.jpg"
 import CS2 from "../assets/Case Studies/CS2.jpg"
 import CS3 from "../assets/Case Studies/CS3.jpg"
 import CS4 from "../assets/Case Studies/CS4.jpg"
@@ -7,9 +8,9 @@ import CS5 from "../assets/Case Studies/CS5.jpg"
 const caseStudies = [
     {
         key: 1,
-        img: CS1,
+        img: screen.width < 415 ? CS1_M : CS1,
         title: "Apex - Chat App Landing Page",
-        description : "Apex’s main motive is too connect people across the globe. Robust, Secure, and with handful of features, this app makes your connections smooth. Let’s share our thoughts and get to know each other."
+        description : screen.width < 415 ? "Apex’s main motive is too connect people across the globe. Robust, Secure, and with handful of features, this app makes" : "Apex’s main motive is too connect people across the globe. Robust, Secure, and with handful of features, this app makes your connections smooth. Let’s share our thoughts and get to know each other."
     },
     {
         key: 2,

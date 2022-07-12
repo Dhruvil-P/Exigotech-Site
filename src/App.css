@@ -46,6 +46,27 @@ body{
     align-items: center;
 }
 
+.menu{
+    position: fixed;
+    top: 60px;
+    right: 16px;
+    width: 48px;
+    height: 49px;
+    background-color: var(--white);
+    color: var(--black);
+    display: grid;
+    place-content: center;
+    font-size: 24px;
+    z-index: 1000;
+    display: none;
+    transition: 0.3s;
+}
+
+.menu:hover{
+    background-color: var(--grey);
+    color: var(--white);
+}
+
 /*  */
 /* Nav CSS */
 /*  */
@@ -182,7 +203,7 @@ body{
 /*  */
 
 .services{
-    margin: 200px 00px 100px 0px;
+    margin: 200px 0px 100px 0px;
 }
 
 .serviceTitleMain{
@@ -339,7 +360,7 @@ body{
 }
 
 .caseStudy:nth-child(1) .csTitle{
-    margin: 15px 15px 10px 15px;
+    margin: 15px 15px 5px 15px;
     font-size: 20px;
     font-weight: medium;
     color: var(--white);
@@ -763,12 +784,177 @@ hr{
 /* Responsive CSS */
 /*  */
 
-@media screen and (max-width: 414px){
-    body{
-        background-color: var(--black);
+@media screen and (max-width: 415px){
+    html{
+        overflow-x: hidden;
     }
 
-    .navItems{
+    body{
+        width: 414px;
+    }
+
+    /*  */
+    /* Common Components CSS */
+    /*  */
+
+    .menu{
+        display: grid;
+    }
+
+    .moreBtn{
+        transform: scale(0.5);
+    }
+
+    .sectionHeading{
+        margin: 0px 16px;
+    }
+
+    /*  */
+    /* Nav CSS */
+    /*  */
+
+    .nav{
+        margin: 0px 16px;
+    }
+
+    .navLogo{
+        margin-top: 60px;
+    }
+
+    .navItems, .navBtn{
         display: none;
     }
+
+    /*  */
+    /* Hero CSS */
+    /*  */
+
+    .hero{
+        margin: 50px 16px;
+        flex-direction: column-reverse;
+    }
+
+    .heroImg{
+        width: 400px;
+        height: 360px;
+        margin-left: 50px;
+    }
+
+    .heading{
+        width: calc(100% - 16px);
+        font-size: 32px;
+    }
+
+    .subText{
+        width: calc(100% - 16px);
+        font-size: 16px;
+        line-height: 24px;
+        margin-top: 10px;
+    }
+
+    .heroBtn{
+        margin-top: 50px;
+        width: calc(100% - 16px);
+    }
+
+    .startBtn, .learnBtn{
+        width: 150px;
+        height: 45px;
+    }
+
+    /*  */
+    /* Services CSS */
+    /*  */
+
+    .serviceTitleMain, .csTitleMain, .aboutTitleMain{
+        font-size: 32px;
+    }
+
+    .service{
+        margin-left: 16px;
+        width: calc(100% - 16px);
+    }
+
+    /*  */
+    /* Case Studies CSS */
+    /*  */
+
+    .caseStudies{
+        height: 450vh;
+    }
+
+    .csGrid{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px 16px;
+        width: calc(100% - 16px);
+        height: 1600px;
+    }
+
+    .caseStudy{
+        width: calc(100% - 16px);
+    }
+
+    .caseStudy:nth-child(1){
+        width: calc(100% - 16px);
+        height: 300px;
+    }
+
+    .csImg, .caseStudy:nth-child(1) .csImg{
+        height: 200px;
+        width: calc(100% - 32px);
+    }
+
+    .caseStudy:nth-child(1) .csTitle{
+        font-size: 17px;
+    }
+
+    .caseStudy:nth-child(1) .csDesc{
+        font-size: 13px;
+        line-height: 20px;
+        height: 10px;
+    }
+
+    /*  */
+    /* About Us CSS */
+    /*  */
+
+    .aboutUs{
+        height: 500vh;
+    }
+
+    .aboutGrid{
+        flex-direction: column-reverse;
+    }
+
+    .aboutDetail{
+        z-index: -1;
+        margin-top: -50px;
+        padding-top: 50px;
+        width: calc(100% - 16px);
+        height: 600px;
+    }
+
+    .aboutDesc{
+        font-size: 16px;
+        line-height: 28px;
+    }
+
+    .offerings{
+        margin: -25px 250px 0px 0px;
+        transform: scale(0.8);
+    }
+
+    .aboutUsImg{
+        height: 390px;
+        margin-left: 16px;
+        width: calc(100% - 32px);
+    }
+
+    /*  */
+    /* Clients CSS */
+    /*  */
+
+    
 }

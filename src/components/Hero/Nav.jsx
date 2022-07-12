@@ -5,6 +5,9 @@ function Nav(){
     return (
         <div className="nav">   
             <img className="navLogo" src={logo} alt="Nav Logo" />
+            <div className="menu">
+            <i class="fa-solid fa-bars"></i>
+            </div>
             <div className="navItems">
                 <div className="items">Home</div>
                 <div className="items">Services</div>
