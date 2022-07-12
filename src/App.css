@@ -47,7 +47,7 @@ body{
 }
 
 .menu{
-    position: fixed;
+    position: absolute;
     top: 60px;
     right: 16px;
     width: 48px;
@@ -874,6 +874,10 @@ hr{
         width: calc(100% - 16px);
     }
 
+    .serviceGrid{
+        margin-top: 25px;
+    }
+
     /*  */
     /* Case Studies CSS */
     /*  */
@@ -945,6 +949,14 @@ hr{
         transform: scale(0.8);
     }
 
+    .offering{
+        width: calc(100% - 16px);
+    }
+
+    .offeringDesc{
+        font-size: 16px;
+    }
+
     .aboutUsImg{
         height: 390px;
         margin-left: 16px;
@@ -961,18 +973,23 @@ hr{
 
     .clientsGrid{
         margin: 50px 16px;
-        width: 300%;
+        width: calc(100% - 32px);
         justify-content: left;
     }
 
     .clientsCardCont{
-        width: calc(100%);
-        display: flex;
-        justify-content: space-between;
+        width: calc(100% - 8px);
+        height: 380px;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .client{
+        margin: 25px 0px 0px 0px;
     }
 
     .carouselBtns{
-        
+        margin: 100px 0px 15px 0px;
     }
 
     /*  */
@@ -980,7 +997,7 @@ hr{
     /*  */
 
     .contactUs{
-        height: 50vh;
+        height: 70vh;
     }
 
     .contactCont{
@@ -989,7 +1006,12 @@ hr{
 
     .contact{
         margin: -200px 0px 0px 0px;
-        transform: scale(0.6);
+        width: calc(100% - 16px);
+        /* transform: scale(0.6); */
+    }
+
+    .contactForm{
+        width: 100%;
     }
 
     .contactUsImg{
