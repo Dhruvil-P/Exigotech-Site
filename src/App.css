@@ -52,8 +52,8 @@ body{
     right: 16px;
     width: 48px;
     height: 49px;
-    background-color: var(--white);
-    color: var(--black);
+    background-color: var(--black);
+    color: var(--white);
     display: grid;
     place-content: center;
     font-size: 24px;
@@ -64,7 +64,6 @@ body{
 
 .menu:hover{
     background-color: var(--grey);
-    color: var(--white);
 }
 
 /*  */
@@ -586,7 +585,7 @@ body{
     height: 650px;
     background-color: var(--white);
     border-radius: 10px;
-    z-index: 1000;
+    z-index: 100;
     box-shadow: 0px 8px 64px #1b243064;
 }
 
@@ -866,8 +865,8 @@ hr{
     /* Services CSS */
     /*  */
 
-    .serviceTitleMain, .csTitleMain, .aboutTitleMain{
-        font-size: 32px;
+    .serviceTitleMain, .csTitleMain, .aboutTitleMain, .clientsTitleMain, .contactTitleMain{
+        font-size: 28px;
     }
 
     .service{
@@ -921,7 +920,7 @@ hr{
     /*  */
 
     .aboutUs{
-        height: 500vh;
+        height: 250vh;
     }
 
     .aboutGrid{
@@ -956,5 +955,84 @@ hr{
     /* Clients CSS */
     /*  */
 
-    
+    .clients{
+        height: 200vh;
+    }
+
+    .clientsGrid{
+        margin: 50px 16px;
+        width: 300%;
+        justify-content: left;
+    }
+
+    .clientsCardCont{
+        width: calc(100%);
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .carouselBtns{
+        
+    }
+
+    /*  */
+    /* Contact Us CSS */
+    /*  */
+
+    .contactCont{
+        flex-direction: column-reverse;
+    }
+
+    .contact{
+        margin: -200px 0px 0px 0px;
+        transform: scale(0.6);
+    }
+
+    .contactUsImg{
+        margin-left: 50px;
+        width: calc(100%);
+        height: 400px;
+    }
+
+    /*  */
+    /* Footer CSS */
+    /*  */
+
+    .footer{
+        width: 100%;
+        height: 250vh;
+        margin-top: 500px;
+    }
+
+    .footerSections{
+        margin: 100px 0px;
+    }
+
+    .upperSection{
+        flex-direction: column;
+        width: calc(100% - 16px);
+    }
+
+    .sect1{
+        margin-left: 16px;
+    }
+
+    .sect2{
+        width: calc(100% - 16px);
+        height: 100vh;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 50px 0px;
+    }
+
+    .footerLinks{
+        width: calc(100% - 16px);
+        margin: 25px 0px;
+    }
+
+    .sect3{
+        width: calc(80% - 16px);
+        height: 100px;
+        margin: 150px 0px 0px 50px;
+    }
 }
